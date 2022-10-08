@@ -1,7 +1,8 @@
 <odoo>
   <data>
-    <record model="ir.ui.view" id="student_base_tree_view">
-            <field name="name">sutident.base.tree.view</field>
+    
+        <record model="ir.ui.view" id="student_base_tree_view">
+            <field name="name">student.base.tree.view</field>
             <field name="model">student.base</field>
             <field name="arch" type="xml">
                 <tree>
@@ -44,7 +45,5 @@
 
         <menuitem id="student_root" name="Student Management" />
         <menuitem id="student_menu" name="Student" parent="student_root" action="student_base_action" />
-        <menuitem id="student_menu1" name="Student" parent="student_menu" action="student_base_action" />
-
   </data>
 </odoo>

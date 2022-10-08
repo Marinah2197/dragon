@@ -2,7 +2,9 @@
 {
     'name': "DRAGON TEST",
 
-    'summary': """la description de mon module""",
+    'summary': """
+        la description de mon module
+    """,
 
     'description': """
         This module processes students management
@@ -23,7 +25,9 @@
     # always loaded
     'data': [
         'security/ir.model.access.csv',
+        #'security/student.class.csv',
         'views/student_base_views.xml',
+        'views/student_class_views.xml',
         'views/templates.xml',
     ],
     # only loaded in demonstration mode
