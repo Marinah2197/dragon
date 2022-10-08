@@ -2,11 +2,10 @@
 {
     'name': "DRAGON TEST",
 
-    'summary': """
-        la description de mon module""",
+    'summary': """la description de mon module""",
 
     'description': """
-        Description longue de mon module
+        This module processes students management
     """,
 
     'author': "Kasia",
