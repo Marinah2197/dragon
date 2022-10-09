@@ -25,7 +25,6 @@
                                 <field name="lastname" required='1'/>
                                 <field name="birth_date" required='1'/>
                                 <field name="age"/>
-
                             </group>
                             <group>
                                 <field name="matricule" required='1'/>
@@ -46,6 +45,6 @@
         <menuitem id="student_root" name="Student Management" />
         <menuitem id="student_menu" name="Student" parent="student_root" action="student_base_action" />
         <menuitem id="student_menu1" name="Student" parent="student_menu" action="student_base_action" />
-        
+
   </data>
 </odoo>
