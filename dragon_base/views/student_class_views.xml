@@ -19,15 +19,15 @@
                 <form string="student_class_form">
                     <sheet> 
                     	<group>
-                                <field name="name"/>
-                                <field name="student_number"/>
-                                <field name="stage"/>
+                                <field name="name" required="1"/>
+                                <field name="student_number" required="1"/>
+                                <field name="stage" required="1"/>
                         </group>
                     </sheet>
                 </form>
             </field>
         </record>
-
+        
         <record model="ir.actions.act_window" id="student_class_action">
             <field name="name">Class</field>
             <field name="res_model">student.class</field>
