@@ -27,9 +27,7 @@
     # always loaded
     'data': [
         'security/ir.model.access.csv',
-        #'security/student.class.csv',
         'views/student_base_views.xml',
-        
         'views/student_class_views.xml',
         'views/res_partner_views.xml',
         'views/templates.xml',
