@@ -3,7 +3,7 @@
     'name': "DRAGON TEST",
 
     'summary': """
-        la description de mon module
+       This module processes students management
     """,
 
     'description': """
@@ -26,10 +26,13 @@
 
     # always loaded
     'data': [
+        'data/ir_sequence_res_partner.xml',
+        'data/ir_sequence_sudent_base.xml',
         'security/ir.model.access.csv',
         'views/student_base_views.xml',
         'views/student_class_views.xml',
         'views/res_partner_views.xml',
+        'views/model_wizard_views.xml',
         'views/templates.xml',
     ],
     # only loaded in demonstration mode

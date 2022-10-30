@@ -8,6 +8,8 @@
                     <field name="name"/>
                     <field name="student_number"/>
                     <field name="stage"/>
+                    <field name="old_stud"/>
+                    <field name="new_stud"/>
                 </tree>
             </field>
         </record>
@@ -17,12 +19,17 @@
             <field name="model">student.class</field>
             <field name="arch" type="xml">
                 <form string="student_class_form">
+                    <header >
+                            <button name="create_wizard" string="Create Wizard" class="oe_highlight" type="object"/>
+                        </header>
                     <sheet> 
                     	<group>
                                 <field name="name" required="1"/>
                                 <field name="student_number" required="1"/>
+                                <field name="new_stud" required="1"/>
                                 <field name="stage" required="1"/>
                         </group>
+                         
                     </sheet>
                 </form>
             </field>

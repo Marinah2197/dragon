@@ -1,5 +1,6 @@
 <odoo>
 	<data>
+
         <record id="res_partner_form_inherit" model="ir.ui.view">
             <field name="name">res.partner.form.inherit</field>
             <field name="model">res.partner</field>
@@ -25,6 +26,8 @@
                 </xpath>
             </field>
         </record>
+
+    
 
 		<record model="ir.actions.act_window" id="professor_action">
             <field name="name">Professor</field>

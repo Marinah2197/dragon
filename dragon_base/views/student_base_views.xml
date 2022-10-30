@@ -1,10 +1,11 @@
 <odoo>
   <data>
     <record model="ir.ui.view" id="student_base_tree_view">
-            <field name="name">sutident.base.tree.view</field>
+            <field name="name">student.base.tree.view</field>
             <field name="model">student.base</field>
             <field name="arch" type="xml">
                 <tree>
+                    <field name="matricule"/>
                     <field name="name"/>
                     <field name="lastname"/>
                     <field name="birth_date"/>
@@ -23,18 +24,25 @@
                             <group>
                                 <field name="name" required='1'/>
                                 <field name="lastname" required='1'/>
-                                <field name="birth_date" required='1'/>
-                                <field name="age"/>
+                                <field name="birth_date" on_change="onchange_getage_id(dob,context)" required='1'/>
+                                <field name="age" readonly="1"/>
                             </group>
                             <group>
-                                <field name="matricule" required='1'/>
+                                <field name="matricule" readonly="1"/>
                                 <field name="photo" widget="image"/>
                             </group>
                         </group>
                     </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids"/>
+                        <field name="activity_ids"/>
+                        <field name="message_ids"/>
+                    </div>
                 </form>
             </field>
         </record>
+
+
 
         <record model="ir.actions.act_window" id="student_base_action">
             <field name="name">Student</field>
