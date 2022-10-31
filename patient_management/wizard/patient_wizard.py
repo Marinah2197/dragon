@@ -16,7 +16,6 @@ class PatientWizard(models.TransientModel):
         Patient_ids = self.env['patient.base']
         active_id = self.env.context.get('active_id')
 
-        # required_id = Patient_ids.browse(active_id)
         Patient = Patient_ids.search([('id', '=', active_id)])
         birth_date = self.birth_date
         current_date = date.today()

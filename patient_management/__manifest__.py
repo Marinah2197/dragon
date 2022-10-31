@@ -35,10 +35,4 @@
         'wizard/patient_wizard_views.xml'
     ],
 
-    'assets':{
-        'web.asset_backend':[
-            'web/static/src/assets_backend.min.js'
-
-        ],
-    }
 }
