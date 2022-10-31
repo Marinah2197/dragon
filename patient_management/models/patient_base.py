@@ -7,7 +7,7 @@ class PatientBase(models.Model):
 	_description = 'Patient management'
 	_inherit = 'mail.thread'
 
-	name = fields.Char(compute='compute_name', string='Name')
+	name = fields.Char(compute='compute_name', string='Name', default=" ")
 	lastname = fields.Char(string='lastname')
 	firstname = fields.Char(string='Firstname')
 	age = fields.Integer(string='age', tracking=True)
@@ -38,7 +38,7 @@ class PatientBase(models.Model):
 			'res_model': 'patient.wizard',
 			'type': 'ir.actions.act_window',
 			'target': 'new',
-			'context': {''},
+			'context': {'Birth_date_value':'Date'},
 		}
 
 	@api.depends("firstname","lastname")

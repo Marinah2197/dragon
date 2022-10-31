@@ -16,8 +16,8 @@
                                 type="object"/>
                         <button name="set_renews" string="Renews" class="oe_highlight" states="cancelled"
                                 type="object"/>
-                        <!-- <button name="open_wizard" string="Wizard" class="oe_highlight"
-                                type="object"/> -->
+                        <button name="open_wizard" string="Wizard" class="oe_highlight"
+                                type="object"/>
                         <field name="state" widget="statusbar" statusbar_visible="new,consulted,treaty" clickable="True"/>
                     </header>
                     <sheet>

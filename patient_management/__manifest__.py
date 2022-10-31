@@ -31,5 +31,14 @@
         'views/patient_base_views.xml',
         #report
         'report/patient_raport.xml',
+        #wizard
+        'wizard/patient_wizard_views.xml'
     ],
+
+    'assets':{
+        'web.asset_backend':[
+            'web/static/src/assets_backend.min.js'
+
+        ],
+    }
 }
